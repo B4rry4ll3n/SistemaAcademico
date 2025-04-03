@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp3.NovaPasta.DisciplinasPage"
+             Title="Disciplinas">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem IconImageSource="menu.png" />
+    </ContentPage.ToolbarItems>
+    <VerticalStackLayout Padding="10" Spacing="20">
+        <Image Source="disciplinas_icon.png" HeightRequest="100" HorizontalOptions="Center" />
+        <Entry x:Name="DisNomeEntry" Placeholder="Nome da Disciplina" />
+        <Entry x:Name="DisSiglaEntry" Placeholder="Sigla da Disciplina" />
+        <Editor x:Name="DisObservacoesEditor" Placeholder="Observações" HeightRequest="100" />
+        <Entry x:Name="CurIdEntry" Placeholder="ID do Curso" Keyboard="Numeric" />
+        <Button Text="Inserir" Clicked="OnInsertClicked" />
+        <Button Text="Atualizar" Clicked="OnUpdateClicked" />
+        <Button Text="Ler Dados" Clicked="OnReadClicked" />
+        <Button Text="Deletar" Clicked="OnDeleteClicked" />
+    </VerticalStackLayout>
+</ContentPage>

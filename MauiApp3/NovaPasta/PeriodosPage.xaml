@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp3.NovaPasta.PeriodosPage"
+             Title="Períodos">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem IconImageSource="menu.png" />
+    </ContentPage.ToolbarItems>
+    <VerticalStackLayout Padding="10" Spacing="20">
+        <Image Source="periodos_icon.png" HeightRequest="100" HorizontalOptions="Center" />
+        <Entry x:Name="PerNomeEntry" Placeholder="Nome do Período" />
+        <Entry x:Name="PerSiglaEntry" Placeholder="Sigla do Período" />
+        <Button Text="Inserir" Clicked="OnInsertClicked" />
+        <Button Text="Atualizar" Clicked="OnUpdateClicked" />
+        <Button Text="Ler Dados" Clicked="OnReadClicked" />
+        <Button Text="Deletar" Clicked="OnDeleteClicked" />
+    </VerticalStackLayout>
+</ContentPage>
